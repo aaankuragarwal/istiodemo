@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: petmedicalhistoryservice
-        image: gcr.io/nithiniolid-scheme-144804stioproject/petmedicalhistoryservice:feb13v1
+        image: gcr.io/solid-scheme-144804/petmedicalhistoryservice:feb13v1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9082

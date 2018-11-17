@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: petdetailsservice
-        image: gcr.io/olid-scheme-144804/petdetailsservice:feb13v1
+        image: gcr.io/solid-scheme-144804/petdetailsservice:feb13v1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9081
@@ -45,7 +45,7 @@ spec:
     spec:
       containers:
       - name: petdetailsservice
-        image: gcr.io/olid-scheme-144804/petdetailsservice:feb15v1
+        image: gcr.io/solid-scheme-144804/petdetailsservice:feb15v1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9081
