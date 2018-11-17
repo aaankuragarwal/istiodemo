@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-export PROJECT=nithinistioproject
+export PROJECT=solid-scheme-144804
 export CONTAINER_VERSION=feb15v1
 export IMAGE=gcr.io/$PROJECT/petdetailsservice:$CONTAINER_VERSION
 export BUILD_HOME=.
 
 gcloud config set project $PROJECT
-gcloud container clusters get-credentials nithinistiocluster --zone us-central1-a --project $PROJECT
+gcloud container clusters get-credentials istio-cluster --zone us-central1-a --project $PROJECT
 
 echo $IMAGE
 docker build -t petdetailsservice -f "${PWD}/Dockerfile" $BUILD_HOME
